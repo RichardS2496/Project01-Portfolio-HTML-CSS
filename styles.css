@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Poppins, sans-serif;
+  --text-color: white;
+  --green-app-color: #7bff8c;
+  --blue-enfasis-bg: #000f2c75;
+  --standard-btn-bg: #fbfbfb10;
+}
+
+body {
+  background: linear-gradient(to right, #0c1628 8%, #1c335e 72%, #2a4d8e 100%);
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* Estilos del header */
+
+header {
+  max-width: 1240px;
+  position: sticky;
+  top: 10px;
+  z-index: 99;
+}
+
+.inner-header-container {
+  position: absolute;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blue-enfasis-bg);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+header img {
+  width: 50px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 10px;
+}
+
+header nav ul li {
+  list-style: none;
+  color: white;
+  font-size: 0.85rem;
+}
+
+.header-link {
+  display: inline-block;
+  padding: 4px 30px;
+  color: var(--text-color);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-link:hover {
+  color: var(--green-app-color);
+  transform: scale(1.5);
+}
+
+/* Estilos del Hero */
+
+/* main {
+  height: 100%;
+} */
+
+.main-hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+
+.main-hero img {
+  width: 180px;
+  border-radius: 100%;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--text-color);
+  margin-bottom: -20px;
+}
+
+h1 {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  text-wrap: balnace;
+}
+
+h1 span {
+  color: var(--green-app-color);
+}
+
+.btn-container {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-container a {
+  width: fit-content;
+  padding: 10px;
+  background-color: var(--standard-btn-bg);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 8px;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-container a:hover {
+  transform: scale(1.15);
+}
+
+.btn-container a img {
+  width: 28px;
+}
