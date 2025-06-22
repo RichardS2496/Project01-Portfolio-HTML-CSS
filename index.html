@@ -12,21 +12,21 @@
         <img src="/assets/logo.png" alt="logo" />
         <nav>
           <ul>
-            <li><a class="header-link" href="/">Inicio</a></li>
-            <li><a class="header-link" href="/#aboutMe">Sobre mi</a></li>
-            <li><a class="header-link" href="/#portfolio">Portafolio</a></li>
-            <li><a class="header-link" href="/#contact">Contacto</a></li>
+            <li><a class="header-link" href="#home">Inicio</a></li>
+            <li><a class="header-link" href="#aboutMe">Sobre mi</a></li>
+            <li><a class="header-link" href="#portfolio">Portafolio</a></li>
+            <li><a class="header-link" href="#contact">Contacto</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <section class="main-hero">
+      <section id="home" class="main-hero">
         <img
           src="./assets/profile_img.jpg"
           alt="imagen ficticia generada con IA"
         />
-        <h2>Richard Suarez</h2>
+        <h3>Richard Suarez</h3>
         <h1>
           <span>Desarrollador Web FullStack</span> con enfoque creativo y
           soluciones efectivas.
@@ -39,6 +39,87 @@
           ><a href="./assets/fake_document.pdf" target="_blank"
             ><img src="./assets/download-icon.svg" alt=""
           /></a>
+        </div>
+      </section>
+      <section id="aboutMe" class="about-section">
+        <div>
+          <img
+            src="./assets/aboutme-section.jpg"
+            alt="Imagen para la seccion de about me"
+          />
+        </div>
+        <div class="about-info">
+          <span class="custom-tag">Sobre mí</span>
+          <h3>
+            Apasionado por el desarrollo web y de las diferentes tecnologías
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut
+            sagittis arcu. Aenean quis aliquet eros. Nulla placerat erat a ipsum
+            tempus, ac varius velit pharetra. Pellentesque nunc augue, volutpat
+            vitae dapibus sit amet, tempor vitae diam.
+          </p>
+        </div>
+      </section>
+      <section id="portfolio" class="portfolio-section">
+        <div class="portfolio-info">
+          <span class="custom-tag">Portafolio</span>
+          <h3>
+            Proyectos desarrollados con enfoque en eficiencia, calidad técnica y
+            resultados concretos.
+          </h3>
+          <div class="portfolio-grid">
+            <article class="grid-item-1">
+              <img
+                src="./assets/runmydev-project.jpg"
+                alt="imagen de web de agencia de desarrollo web"
+              />
+              <h5>Run My Dev</h5>
+              <p class="card-description">Web de Agencia de Desarrollo Web</p>
+            </article>
+            <article class="grid-item-2">
+              <img
+                src="./assets/TheStore.jpg"
+                alt="imagen para overview web fakestore"
+              />
+              <h5>The FakeStore</h5>
+              <p class="card-description">Ecommerce con API de FakeStoreAPI</p>
+            </article>
+            <div class="grid-item-3">
+              <h4>Múltiples tecnologías que se adaptan a tus necesidades</h4>
+              <p>
+                Utilizo un stack adaptable que se ajusta a cada proyecto,
+                combinando tecnologías modernas para crear soluciones robustas y
+                alineadas con tus objetivos.
+              </p>
+            </div>
+            <div class="grid-item-4">
+              <h4>
+                Desde CMS hasta desarrollo a medida con JavaScript, PHP,
+                Tailwind y otras tecnologías modernas
+              </h4>
+            </div>
+            <article class="grid-item-5">
+              <img
+                src="./assets/NextMCUReleases.jpg"
+                alt="imagen de web ultimos lanzamientos del universo de Marvel"
+              />
+              <h5>Next MCU Releases</h5>
+              <p class="card-description">
+                Estate atento a todas las novedades del universo de Marvel
+              </p>
+            </article>
+            <article class="grid-item-6">
+              <img
+                src="./assets/musiconnect-project.jpg"
+                alt="imagen para overview web fakestore"
+              />
+              <h5>MusiConnect</h5>
+              <p class="card-description">
+                Escucha, conecta y comparte tu música favorita
+              </p>
+            </article>
+          </div>
         </div>
       </section>
     </main>
