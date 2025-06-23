@@ -13,6 +13,8 @@
   --blue-enfasis-bg: #000f2c75;
   --standard-btn-bg: #fbfbfb10;
   --enfasis-color: #1c335e;
+  --bg-contact-color: #24242475;
+  --footer-bg: #242424c4;
 }
 
 html {
@@ -21,7 +23,7 @@ html {
 
 body {
   background: linear-gradient(to right, #0c1628 8%, #1c335e 72%, #2a4d8e 100%);
-  max-width: 1240px;
+
   margin: 0 auto;
   transition: all 0.3s ease-in-out;
 }
@@ -30,6 +32,7 @@ body {
 
 header {
   max-width: 1240px;
+  margin: 0 auto;
   position: sticky;
   top: 10px;
   z-index: 99;
@@ -52,12 +55,12 @@ header img {
   width: 50px;
 }
 
-header nav ul {
+header ul {
   display: flex;
   gap: 10px;
 }
 
-header nav ul li {
+header li {
   list-style: none;
   color: white;
   font-size: 0.85rem;
@@ -80,6 +83,8 @@ header nav ul li {
 /* Estilos del Hero */
 
 .main-hero {
+  max-width: 1240px;
+  margin: 0 auto;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -108,7 +113,7 @@ h1 {
   font-weight: 400;
   font-size: 3.5rem;
   line-height: 4rem;
-  text-wrap: balnace;
+  text-wrap: balance;
   margin-top: -20px;
 }
 
@@ -139,14 +144,15 @@ h1 span {
   transform: scale(1.15);
 }
 
-.btn-container a img {
+.btn-container img {
   width: 28px;
 }
 
 /* Estilos del About Section */
 
 .about-section {
-  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
   padding: 120px 80px;
   display: flex;
   gap: 80px;
@@ -156,7 +162,7 @@ h1 span {
   flex: 1;
 }
 
-.about-section div img {
+.about-section img {
   width: 100%;
   height: 420px;
   object-fit: cover;
@@ -186,6 +192,8 @@ p {
 /* Estilos de la seccion Portafolio */
 
 .portfolio-section {
+  max-width: 1240px;
+  margin: 0 auto;
   padding: 120px 60px;
   text-align: center;
   display: flex;
@@ -205,11 +213,12 @@ h4 {
   color: var(--text-color);
   font-size: 1.75rem;
   font-weight: 400;
+  text-wrap: balance;
 }
 
 h5 {
   color: var(--text-color);
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
 }
 
@@ -217,7 +226,7 @@ h5 {
   padding: 40px 0;
   width: 100%;
   display: grid;
-  gap: 40px 20px;
+  gap: 100px 20px;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: auto auto;
   text-align: start;
@@ -256,7 +265,7 @@ h5 {
 }
 .grid-item-3 {
   grid-area: c;
-  margin: 0 0 40px 40px;
+  margin: 0 0 40px 60px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -274,4 +283,98 @@ h5 {
 .portfolio-grid article:hover {
   transform: scale(1.05);
   background-color: var(--enfasis-color);
+}
+
+article a {
+  margin-top: auto;
+  align-self: flex-end;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+  padding: 5px 10px;
+}
+
+article:hover a {
+  color: var(--green-app-color);
+}
+
+/* Seccion de contacto */
+
+.contact-section {
+  background-color: var(--bg-contact-color);
+}
+
+.inner-contact-section {
+  margin: 0 auto;
+  padding: 120px 60px;
+  max-width: 1240px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inner-contact-section p {
+  width: 72%;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+.personal-info {
+  flex: 1;
+}
+
+.personal-info h5 {
+  margin: 20px 0;
+}
+
+.personal-info p {
+  width: 100%;
+}
+
+.btn-container-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+  flex: 1;
+}
+
+.btn-container-contact a {
+  width: fit-content;
+  padding: 10px;
+  background-color: var(--standard-btn-bg);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 8px;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-container-contact a:hover {
+  transform: scale(1.15);
+}
+
+.btn-container-contact img {
+  width: 28px;
+  border-radius: 100%;
+}
+
+footer {
+  background-color: var(--footer-bg);
+  padding: 40px 0;
+}
+
+footer div {
+  max-width: 1240px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
