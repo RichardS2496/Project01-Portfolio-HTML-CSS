@@ -305,6 +305,27 @@ article:hover a {
   color: var(--green-app-color);
 }
 
+.scroll-up-btn {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 12px;
+  background-color: var(--green-app-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.scroll-up-btn:hover {
+  transform: scale(1.15);
+}
+
+.scroll-up-btn img {
+  width: 32px;
+}
+
 /* Seccion de contacto */
 
 .contact-section {
