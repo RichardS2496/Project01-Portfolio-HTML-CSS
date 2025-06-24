@@ -38,9 +38,16 @@ header {
   z-index: 99;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .inner-header-container {
   position: absolute;
   width: 100%;
+  margin: 0 10px;
   padding: 10px 20px;
   display: flex;
   flex-direction: row;
@@ -55,7 +62,7 @@ header img {
   width: 50px;
 }
 
-header ul {
+.main-header-links {
   display: flex;
   gap: 10px;
 }
@@ -377,4 +384,113 @@ footer div {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 980px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.75rem;
+  }
+
+  .about-section {
+    flex-direction: column;
+    padding: 60px 80px;
+  }
+  .about-info {
+    order: 1;
+  }
+  .about-img-container {
+    order: 2;
+  }
+  .portfolio-grid {
+    padding: 40px 0;
+    width: 100%;
+    display: grid;
+    gap: 40px 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "a b"
+      "c c"
+      "e f"
+      "d d";
+  }
+  .grid-item-3 {
+    margin: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  header {
+    top: 0;
+  }
+  .main-header-links {
+    display: none;
+  }
+  .inner-header-container {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .main-hero {
+    padding: 0 20px;
+  }
+  .about-section {
+    padding: 20px;
+  }
+  .portfolio-section {
+    padding: 20px;
+  }
+  .portfolio-grid {
+    grid-template-columns: repeat(1, 1fr);
+
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "e"
+      "f"
+      "d";
+  }
+  .contact-section {
+    padding: 60px 20px;
+  }
+  .inner-contact-section {
+    padding: 0;
+  }
+  .contact-details {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .inner-contact-section p {
+    width: 100%;
+  }
+  h1 {
+    font-size: 2rem;
+    line-height: 2.75rem;
+  }
+  h2 {
+    font-size: 1.875rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    margin: 0;
+  }
+  h4 {
+    font-size: 1.35rem;
+  }
+  footer {
+    font-size: 12px;
+  }
 }
