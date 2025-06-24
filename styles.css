@@ -426,6 +426,7 @@ footer div {
   .about-section {
     flex-direction: column;
     padding: 60px 80px;
+    gap: 40px;
   }
   .about-info {
     order: 1;
@@ -467,7 +468,7 @@ footer div {
     padding: 0 20px;
   }
   .about-section {
-    padding: 20px;
+    padding: 40px 20px;
   }
   .portfolio-section {
     padding: 20px;
